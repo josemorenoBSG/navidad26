@@ -456,7 +456,7 @@ main > section[id]{overflow:visible!important}
 <button type="button" class="video-cerrar" aria-label="Cerrar video">×</button>
 <iframe id="videoInduccion" title="Video de inducción · Onboarding tiendas" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
 </div>
-<a class="video-stream" href="https://bsgglobal-my.sharepoint.com/:v:/g/personal/jose_moreno_bsg_global/IQABwUWeqh3hRbXv4K6A36oMAXJ6nHgwlPzC5IvC20XzDnI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=Faxdlr" target="_blank" rel="noopener noreferrer">¿No carga? Ábrelo en Stream ↗</a>
+<a class="video-stream" href="https://bsgglobal-my.sharepoint.com/:v:/g/personal/jose_moreno_bsg_global/IQA6qY6oJblRSZ_mGfGozEZQAZgQd5YyAvW64qDHQfyzVHs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=quKD35" target="_blank" rel="noopener noreferrer">¿No carga? Ábrelo en Stream ↗</a>
 </div>
 <div id="rutaOverlay" class="ruta-overlay" hidden></div>
 <div id="rutaModal" class="ruta-modal" role="dialog" aria-modal="true" aria-labelledby="rutaTitulo" hidden>
@@ -544,8 +544,8 @@ aplica();
 [].forEach.call(document.querySelectorAll('img.esquina'),function(i){i.src=src[+i.getAttribute('data-orn')]||''})})();
 // video de inducción: se abre en Stream con el enlace para cualquier persona (no pide iniciar sesión)
 (function(){
-var COMPARTIR='https://bsgglobal-my.sharepoint.com/:v:/g/personal/jose_moreno_bsg_global/IQABwUWeqh3hRbXv4K6A36oMAXJ6nHgwlPzC5IvC20XzDnI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Faxdlr';
-var EMBED='https://bsgglobal-my.sharepoint.com/personal/jose_moreno_bsg_global/_layouts/15/embed.aspx?UniqueId=9e45c101-1daa-45e1-b5ef-e0ae80dfaa0c&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create';
+var COMPARTIR='https://bsgglobal-my.sharepoint.com/:v:/g/personal/jose_moreno_bsg_global/IQA6qY6oJblRSZ_mGfGozEZQAZgQd5YyAvW64qDHQfyzVHs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=quKD35';
+var EMBED='https://bsgglobal-my.sharepoint.com/personal/jose_moreno_bsg_global/_layouts/15/embed.aspx?UniqueId=a88ea93a-b925-4951-9fe6-19f1a8cc4650&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create';
 var EN_PAGINA=false; // true = reproducir dentro de la página (iframe); hoy Microsoft solo lo permite con sesión de BSG
 var btn=document.getElementById('btnVideoInduccion'),ov=document.getElementById('videoModal'),frame=document.getElementById('videoInduccion'),cerrar=ov.querySelector('.video-cerrar'),enlace=ov.querySelector('.video-stream'),musica=document.getElementById('musica'),retomar=false,fuera=false;
 function musicaSonando(){return !!musica&&musica.textContent.indexOf('🔔')>-1}
