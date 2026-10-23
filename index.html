@@ -75,6 +75,16 @@ main > section[id]{overflow:visible!important}
 @media (max-width:700px){.esquina{width:42px;right:-8px}.esquina[data-orn="0"]{width:46px}.esquina.arriba{top:-22px}.esquina.abajo{bottom:-18px}}
 @media (max-width:1120px){.esquina.baston{display:none}}
 @media (max-width:1180px){.adornos{display:none}}
+/* ---- Mantenimiento: flujo de contacto ---- */
+.flujo-mant{background:#E8462F;color:#F9F5F2;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.flujo-tit{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F9F5F2;opacity:.9}
+.flujo-pasos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;counter-reset:none}
+.flujo-pasos li{position:relative;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border-radius:14px;padding:14px 16px;font-size:16px;line-height:1.35}
+.flujo-pasos li:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);z-index:1;font-weight:700;font-size:18px;color:#F9F5F2}
+.flujo-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#F9F5F2;color:#C03A24;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+.flujo-nota{background:#F9F5F2;color:#241C16;border-radius:12px;padding:12px 16px;font-size:15px;line-height:1.45}
+.flujo-nota b{color:#C03A24}
+@media (max-width:760px){.flujo-pasos{grid-template-columns:1fr}.flujo-pasos li:not(:last-child)::after{content:"↓";right:auto;left:28px;top:auto;bottom:-15px;transform:none}}
 /* ---- Atención a inspecciones ---- */
 .insp-pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 @media (max-width:860px){.insp-pasos{grid-template-columns:repeat(2,1fr)}}
@@ -303,6 +313,15 @@ main > section[id]{overflow:visible!important}
 
 <section id="mantenimiento" style="position: relative; overflow: hidden; background: #FFFFFF; border-radius: 24px; border-top: 5px solid #E8462F; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px;"><img class="xmas esquina arriba" data-orn="2" alt="" aria-hidden="true" style="--r:-8deg">
 <div style="display: flex; align-items: center; gap: 14px;"><div style="width: 52px; height: 52px; border-radius: 16px; background: #1C6B4A; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F9F5F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-.4-.4-2.1z"></path></svg></div><div><div style="font-size: 13px; color: #C03A24; font-weight: 700; letter-spacing: 0.1em;">05</div><h2 style="margin: 0; font-family: Quicksand, sans-serif; font-size: 30px; font-weight: 700; color: #1C6B4A;">Mantenimiento</h2></div></div>
+<div class="flujo-mant" role="group" aria-label="Flujo de contacto para mantenimiento">
+<div class="flujo-tit">Flujo de contacto</div>
+<ol class="flujo-pasos">
+<li><span class="flujo-num">1</span><span>Primero contacta a tu <b>VCD</b></span></li>
+<li><span class="flujo-num">2</span><span>Levanta tu reporte en <b>CONSUMAN</b></span></li>
+<li><span class="flujo-num">3</span><span>Si es necesario, marca a tu <b>analista</b></span></li>
+</ol>
+<div class="flujo-nota">Recuerda que todas las incidencias deben generarse a través de <b>CONSUMAN</b>.</div>
+</div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
 <div style="background: #EDE7DE; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
 <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6B6156;">Temas por los cuales debes contactar y reportar por CONSUMAN</div>
@@ -312,12 +331,11 @@ main > section[id]{overflow:visible!important}
 <div style="font-size: 15px; line-height: 1.4;"><b>Plaga</b> en piso de venta o bodega</div>
 <div style="font-size: 15px; line-height: 1.4;"><b>Cualquier riesgo</b> para las personas o la tienda</div>
 </div>
-<div style="background: #E8462F; color: #FFFFFF; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 14px;">
-<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C9CCF4;">Contacto directo · 24 hrs del día</div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-weight: 700; font-size: 16px;">Octavio González</div><div style="font-size: 14px; opacity: 0.92;">Región 1 y 3 · <b>55 8523 0330</b></div></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-weight: 700; font-size: 16px;">Edson Balderas</div><div style="font-size: 14px; opacity: 0.92;">Región 2 y 3 · <b>55 4890 6339</b></div></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-weight: 700; font-size: 16px;">Maximiliano Vázquez</div><div style="font-size: 14px; opacity: 0.92;">Aire acondicionado · <b>55 4848 7137</b></div></div>
-<div style="margin-top: 4px; background: rgba(255,255,255,0.14); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px;"><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C9CCF4;">Asistencia de urgencias</div><div style="font-size: 14px; line-height: 1.45;">Llama para reportar y, acto seguido, genera el reporte en <b>CONSUMAN + VCD</b>.</div></div>
+<div style="background: #EDE7DE; color: #241C16; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 14px;">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6B6156;">Contacto directo · 24 hrs del día</div>
+<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-weight: 700; font-size: 16px; color: #1C6B4A;">Octavio González</div><div style="font-size: 14px; color: #241C16;">Región 1 y 3 · <b>55 8523 0330</b></div></div>
+<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-weight: 700; font-size: 16px; color: #1C6B4A;">Edson Balderas</div><div style="font-size: 14px; color: #241C16;">Región 2 y 3 · <b>55 4890 6339</b></div></div>
+<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-weight: 700; font-size: 16px; color: #1C6B4A;">Maximiliano Vázquez</div><div style="font-size: 14px; color: #241C16;">Aire acondicionado · <b>55 4848 7137</b></div></div>
 </div>
 </div>
 </section>
