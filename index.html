@@ -144,6 +144,9 @@ main > section[id]{overflow:visible!important}
 .ruta-texto{margin:0;font-size:17px;line-height:1.6;color:#241C16}
 .ruta-solo{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:#E8462F;color:#fff;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
 .ruta-solo::before{content:"★";color:#C9CCF4}
+.ruta-btns{display:flex;flex-wrap:wrap;gap:12px}
+.ruta-modal a.ruta-btn.ruta-btn-2{background:#1C6B4A;box-shadow:0 8px 20px rgba(28,107,74,.28)}
+.ruta-modal a.ruta-btn.ruta-btn-2:hover{background:#155338}
 .ruta-sep{height:1px;background:#E2DBCF;margin:10px 0 2px}
 .ruta-sub2{margin:0;font-family:Quicksand,sans-serif;font-size:clamp(22px,3vw,28px);font-weight:700;color:#1C6B4A}
 .ruta-img2{display:block;width:100%;height:auto;border-radius:14px;border:1px solid #E2DBCF}
@@ -417,7 +420,10 @@ main > section[id]{overflow:visible!important}
 <h3 id="rutaTitulo" class="ruta-ancho ruta-anim" style="--d:90ms">Equipo de plantilla</h3>
 <p class="ruta-texto ruta-anim" style="--d:180ms">Dirigido a colaboradores de nuevo ingreso con posición fija en tienda. Su siguiente paso es completar los cursos de su Recorrido de Aprendizaje, que encontrarán en su perfil de Learning Academy o directamente desde aquí, para desarrollar las habilidades que marcan la diferencia con cada cliente.</p>
 <div class="ruta-prog ruta-anim" style="--d:270ms"><small>Programa</small><strong>MI RECORRIDO DE APRENDIZAJE 🚀 (Tiendas)</strong></div>
-<a class="ruta-btn ruta-anim" style="--d:360ms" href="https://learningacademy.bsg.global/totara/program/required.php?id=57" target="_blank" rel="noopener noreferrer">Ir al recorrido <span aria-hidden="true">↗</span><span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> (se abre en una pestaña nueva)</span></a>
+<div class="ruta-btns ruta-anim" style="--d:360ms">
+<a class="ruta-btn" href="https://learningacademy.bsg.global/totara/program/required.php?id=57" target="_blank" rel="noopener noreferrer">Ir al recorrido <span aria-hidden="true">↗</span><span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> (se abre en una pestaña nueva)</span></a>
+<a class="ruta-btn ruta-btn-2" href="https://veronoriegaglez12.github.io/GuiaTrainer/" target="_blank" rel="noopener noreferrer">Temario primeros días <span aria-hidden="true">↗</span><span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> (se abre en una pestaña nueva)</span></a>
+</div>
 </div>
 </template>
 <template id="rt-temporada">
